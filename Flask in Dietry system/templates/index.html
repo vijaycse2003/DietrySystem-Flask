@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div class="offset-3 col-md-5">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label class="form-label">Product id</label>
+                        <input type="text" class="form-control" name="id">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Product Name</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Protein</label>
+                        <input type="text" class="form-control" name="protein">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Carbohydrates</label>
+                        <input type="text" class="form-control" name="carbo">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Fat</label>
+                        <input type="text" class="form-control" name="fat">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Vitamins</label>
+                        <input type="text" class="form-control" name="vitamin">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Blood pressure</label>
+                        <input type="text" class="form-control" name="bp">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">calories</label>
+                        <input type="text" class="form-control" name="calories">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Testrone</label>
+                        <input type="text" class="form-control" name="testrone">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Product details</label>
+                        <textarea rows="4" cols="7" class="form-control" name="detail"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Image file</label>
+                        <input type="file" id="files"  class="form-control" name="image">
+                    </div>
+                    
+                    
+                    <div class="col-6 mx-auto">
+                        <input type="submit" onclick="show()" class="btn w-100 btn-primary" value="Upload data">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+    var path=(window.URL || window.webkitURL).createObjectUrl(file);
+    console.log("path",path);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
